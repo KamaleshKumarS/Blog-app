@@ -95,8 +95,8 @@ app.post('/publish',(req,res)=>{
 		res.json({change:false})
 	})
 })
-app.listen(4000,()=>{
-	console.log('server started on port 4000')
+app.listen(process.env.PORT || 3030,()=>{
+	console.log('server started on port 3030')
 })
 
 const generateAccessToken=(param)=>{
